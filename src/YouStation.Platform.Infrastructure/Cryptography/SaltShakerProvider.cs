@@ -33,17 +33,15 @@ namespace YouStation.Platform.Infrastructure.Cryptography
             Array.Copy(hash, 0, saltyHash, SaltAmount, HashSize);
 
             var salty = Convert.ToBase64String(saltyHash);
-
             return _cryptoProvider.Encrypt(salty);
         }
 
         public bool Desalinate(string value, string saltyValue)
         {
             var salty = _cryptoProvider.Decrypt(saltyValue);
-
             var saltyHash = Convert.FromBase64String(salty);
-
             var salt = new byte[SaltAmount];
+            
             Array.Copy(saltyHash, 0, salt, 0, SaltAmount);
 
             var pbkdf2 = new Rfc2898DeriveBytes(value, salt, Iterations);
