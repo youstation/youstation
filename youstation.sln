@@ -18,7 +18,6 @@ ProjectSection(SolutionItems) = preProject
 	docker\docker-compose.yml = docker\docker-compose.yml
 	docker\pgadmin4.dockerfile = docker\pgadmin4.dockerfile
 	docker\pgadmin4-servers.json = docker\pgadmin4-servers.json
-	docker\pgadmin4-entrypoint.sh = docker\pgadmin4-entrypoint.sh
 EndProjectSection
 EndProject
 Global
