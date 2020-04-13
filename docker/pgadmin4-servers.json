@@ -1,0 +1,13 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "Youstation Server",
+      "Group": "Servers",
+      "Port": 5432,
+      "Username": "root",
+      "Host": "postgres-ys",
+      "SSLMode": "prefer",
+      "MaintenanceDB": "youstation"
+    }
+  }
+}

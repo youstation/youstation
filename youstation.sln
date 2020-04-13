@@ -13,6 +13,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tst", "tst", "{7FADE022-688
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouStation.Platform.Infrastructure.UnitTests", "tst\YouStation.Platform.Infrastructure.UnitTests\YouStation.Platform.Infrastructure.UnitTests.csproj", "{B7AEE75C-7023-48F7-8E33-BE9B994B699D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{790C5011-F410-471A-A153-CC5118CA01FD}"
+ProjectSection(SolutionItems) = preProject
+	docker\docker-compose.yml = docker\docker-compose.yml
+	docker\pgadmin4.dockerfile = docker\pgadmin4.dockerfile
+	docker\pgadmin4-servers.json = docker\pgadmin4-servers.json
+	docker\pgadmin4-entrypoint.sh = docker\pgadmin4-entrypoint.sh
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

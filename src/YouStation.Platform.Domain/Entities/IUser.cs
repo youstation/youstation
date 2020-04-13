@@ -8,7 +8,6 @@ namespace YouStation.Platform.Domain.Entities
         string Name { get; }
         string Email { get; }
         string Password { get; }
-        string Salt { get; }
         IAccount Account { get; }
     }
 }
